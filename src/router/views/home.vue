@@ -16,8 +16,8 @@ export default {
         roundTrip: false,
         journeyDate: new Date().toISOString().substr(0, 10),
         returningDate: new Date().toISOString().substr(0, 10),
-        sourceCity: 'አዲስ አበባ',
-        destinationCity: ''
+        sourceCity: 'Adama (Nazareth/Nazret)',
+        destinationCity: 'Addis Ababa'
       },
       states: {
         journeyDate: false,

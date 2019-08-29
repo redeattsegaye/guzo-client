@@ -13,6 +13,11 @@ export default [
     component: () => lazyLoadView(import('@views/searchBuses')),
   },
   {
+    path: '/purchaseTicket/:journeyId',
+    name: 'purchaseticket',
+    component: () => lazyLoadView(import('@views/purchaseTicket')),
+  },
+  {
     path: '/busDetail',
     name: 'busDetail',
     component: () => lazyLoadView(import('@views/busDetails')),
@@ -21,7 +26,7 @@ export default [
     path: '/buyTicket',
     name: 'buyTicket',
     meta: {
-      authRequired: true
+      authRequired: true,
     },
     component: () => lazyLoadView(import('@views/howToBuy')),
   },
@@ -29,7 +34,7 @@ export default [
     path: '/refundTicket',
     name: 'refundTicket',
     meta: {
-      authRequired: true
+      authRequired: true,
     },
     component: () => lazyLoadView(import('@views/refundTicket')),
   },
@@ -37,7 +42,7 @@ export default [
     path: '/getTicket',
     name: 'getTicket',
     meta: {
-      authRequired: true
+      authRequired: true,
     },
     component: () => lazyLoadView(import('@views/getTicket')),
   },
@@ -45,7 +50,7 @@ export default [
     path: '/cancelTicket',
     name: 'cancelTicket',
     meta: {
-      authRequired: true
+      authRequired: true,
     },
     component: () => lazyLoadView(import('@views/cancelTicket')),
   },
